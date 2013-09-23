@@ -1,0 +1,39 @@
+
+#page {
+    background: url(../images/background.png) repeat-y top;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr th {
+  font-weight: bold;
+  border-bottom: 1px dotted black;
+}
+table tr td {
+  border-bottom: 1px dotted black;
+  background-color: #bbbbbb;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table tr.online td {
+  background-color: PaleGreen;
+}
+
+.flash_notice {
+	background-color: #FFFF00;
+	padding: 10px;
+}
+
+table tr.error td {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
+table tr.notice td {background:#FFFF00;color:#514721;border-color:#FFD324;}
+table tr.success td {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.plugin-name {font-weight: bold;}
+.collapsed { display: none;}
+.paddeddiv { padding-left: 2em;}
+
+.task {padding:0;margin-bottom:0;border:0;}
+.help {margin-top:50px;}

@@ -1,0 +1,168 @@
+body {
+	color: #333333;
+	background-color: #EEEEEE;
+	font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+h2, h3 {
+	font-weight: lighter;
+}
+
+.right {
+	float: right;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 2px 0 #CCCCCC;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="submit"]:focus {
+	box-shadow: 0 2px 0 #CCCCCC;
+}
+
+#header {
+	background-color: #FFFFFF;
+	padding: 30px 0 15px;
+	border-bottom: 2px solid #FF6B00;
+}
+
+#logo {
+	height: 38px;
+	width: 139px
+}
+
+#slogan {
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF6B00;
+	position: relative;
+	top: 14px;
+}
+
+#phone {
+	background-image: url(/images/witure/company/phone.png);
+	background-repeat: no-repeat;
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	top: 14px;
+	padding-left: 35px;
+}
+
+#content {
+	background-color: #FFFFFF;
+	background-image: url(/images/witure/company/content.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	height: 400px;
+	border-bottom: 2px solid #FF6B00;
+}
+
+#login_form {
+	padding: 30px 0;
+	color: #FFFFFF;
+}
+
+#login_form form {
+/*	background-color: rgba(0, 0, 0, 0.5);*/
+	padding: 30px;
+}
+
+#login_form h2 {
+	margin: 0;
+}
+
+#login_form input {
+	padding: 4px 6px;
+}
+
+#login_form label {
+	position: relative;
+	margin-top: 10px;
+}
+
+#login_form label span {
+	position: absolute;
+	right: 30px;
+}
+
+#login_form .msg {
+	margin: 0 0 10px;
+	font-weight: bold;
+	color: #FF6666;
+	height: 20px;
+}
+
+#login {
+	width: 220px;
+	height: 45px;
+	background: #FF842B;
+	box-shadow: 0 2px 0 #D45900;
+	color: #FFFFFF;
+	border: none;
+}
+
+#feature {
+	background-color: #FFFFFF;
+	padding-bottom: 30px;
+}
+
+#feature li {
+	margin-top: 45px;
+	padding-top: 48px;
+	list-style: none;
+}
+
+#feature p {
+	margin: 0 0 5px;
+	color: #888888;
+}
+
+#real_time_statistics {
+	background-image: url(/images/witure/company/real_time_statistics.png);
+	background-repeat: no-repeat;
+}
+
+#enhance_user_experience {
+	background-image: url(/images/witure/company/enhance_user_experience.png);
+	background-repeat: no-repeat;
+}
+
+#security_and_smarty {
+	background-image: url(/images/witure/company/security_and_smarty.png);
+	background-repeat: no-repeat;
+}
+
+#footer {
+	border-top: 1px solid #CCCCCC;
+	height: 60px;
+	line-height: 60px;
+	color: #999999;
+	background: #EEEEEE;
+}
+
+#footer a {
+	color: #999999;
+}
+
+#footer .span1 {
+	width: 60px;
+}
+
+
+/* others */
+
+#slogan input {
+	box-shadow: none;
+	border: 1px solid #EEEEEE;
+	margin-right: 5px;
+	line-height: 16px;
+	font-size: 14px;
+	height: 18px;
+	padding: 2px;
+	width: 90px;
+}

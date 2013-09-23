@@ -1,0 +1,15 @@
+indexSuccess:
+  has_layout:     true
+  layout:         home
+  
+aboutSuccess:
+  has_layout:     true
+  layout:         home
+  
+faqSuccess:
+  has_layout:     true
+  layout:         home
+  
+joinSuccess:
+  has_layout:     true
+  layout:         home

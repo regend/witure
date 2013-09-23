@@ -1,0 +1,6 @@
+all:
+  ap_plugins_enabled: {  }
+  ap_modules_enabled: {  }
+  config_options:
+    main_url: 'http://www.authpuppy.org'
+    site_name: 'AuthPuppy Authentication Server'

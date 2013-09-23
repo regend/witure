@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Node
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          node
+    with_doctrine_route:   true
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Node Management
+      filter:  ~
+      form:    ~
+      edit:
+        title: Editing Node "%%name%%"
+      new:
+        title: New Node

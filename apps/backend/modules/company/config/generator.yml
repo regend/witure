@@ -1,0 +1,24 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Company
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          company
+    with_doctrine_route:   true
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Company Management
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Editing Company "%%company_name%%"
+      new:
+        title: New Company

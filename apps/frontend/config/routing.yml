@@ -1,0 +1,96 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /home
+  param: { module: home, action: index }
+
+change_language:
+  url:   /change_language
+  param: { module: home, action: changeLanguage }
+
+catchall:
+  url:   /:action
+  param: { module: node }
+  requirements:
+    action: (auth|portal|login|ping|logout)
+
+# Legacy
+catchall2:
+  url:   /:action/
+  param: { module: node }
+  requirements:
+    action: (auth|ping|login|portal|logout)
+    
+# Legacy
+catchall3:
+  url:   /:action/index.php
+  param: { module: node }
+  requirements:
+    action: (auth|ping|login|portal)
+    
+gw_messages:
+  url:  /gw_message.php
+  param: {module:node, action:gwmessage }
+
+sf_guard_signin:
+  url:   /company
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_passworddoctrine
+  param: { module: sfGuardAuth, action: password }
+ 
+install_index:
+  url:   /install
+  param: { module: install, action: index, page:1 } 
+  
+install_index_page:
+  url:   /install/:page
+  param: { module: install, action: index }
+  requirements:
+    page: \d+
+
+node_edit:
+  url:   /company/node/edit/:id
+  class:   sfDoctrineRoute
+  options: { model: Node, type: object, column: id }
+  param: { module: node, action: edit }
+  
+node_action:
+  url:   /company/node/:action
+  param: { module: node }
+  
+node_index:
+  url:   /company/node
+  param: { module: node, action: index }
+
+company_index:
+  url:   /company/home
+  param: { module: home, action: dashboard }
+  
+company_action:
+  url:   /company/:action
+  param: { module: company }
+  requirements:
+    action: (show|edit|update)
+  
+home_about:
+  url:   /:action
+  param: { module: home }
+  requirements:
+    action: (about|faq|join)
+  
+configuration_page:
+  url: /configure
+  param: { module: install, action:configure }
+
+#default:
+#  url:   /:module/:action/*
+
+
